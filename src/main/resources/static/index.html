@@ -1,9 +1,51 @@
+<!DOCTYPE html>
 <html>
-<header>
-</header>
-<h1>This is CodeArts Demo!</h1>
+<head>
+    <title>CodeArts Demo</title>
+    <style>
+        body {
+            text-align: center;
+            position: relative;
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            color: white; /* Make the text white */
+        }
+        body::before {
+            content: "";
+            background-image: url('bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .centered {
+            display: block;
+            margin: auto;
+        }
+        .left-aligned {
+            display: block;
+            margin: auto;
+            background-color: white;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            padding: 5px; /* Optional: adjust padding as needed */
+			width: 55%;
+        }
+    </style>
+</head>
 <body>
+    <img class="centered" src="logo.png" alt="HC Logo">
+    <h1>This is CodeArts Demo!</h1>
     <h1>This demo is created using CodeArts, which includes several services in it.</h1>
-    <img src="CodeArts.png" alt="CodeArts Services Connected" width="1397" height="379">
+    <img class="left-aligned" src="CodeArts.png" alt="CodeArts Services Connected" width="65%">
 </body>
 </html>
