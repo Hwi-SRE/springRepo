@@ -59,7 +59,7 @@ spec:
       protocol: TCP
       port: 8080
       targetPort: 8000
-      nodePort: 30122
+      nodePort: 30120
   selector:
     app: springcont
   type: NodePort
